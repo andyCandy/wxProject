@@ -1,0 +1,49 @@
+2014-11-10 15:11:13 更新端口去向失败，ORA-00904: "GETLINKEQUIP": 标识符无效
+
+
+
+
+java.sql.SQLException: ORA-00904: "GETLINKEQUIP": 标识符无效
+
+	at oracle.jdbc.dbaccess.DBError.throwSqlException(DBError.java:180)
+	at oracle.jdbc.ttc7.TTIoer.processError(TTIoer.java:208)
+	at oracle.jdbc.ttc7.Oall7.receive(Oall7.java:543)
+	at oracle.jdbc.ttc7.TTC7Protocol.doOall7(TTC7Protocol.java:1451)
+	at oracle.jdbc.ttc7.TTC7Protocol.parseExecuteFetch(TTC7Protocol.java:862)
+	at oracle.jdbc.driver.OracleStatement.executeNonQuery(OracleStatement.java:1846)
+	at oracle.jdbc.driver.OracleStatement.doExecuteOther(OracleStatement.java:1771)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:2361)
+	at oracle.jdbc.driver.OracleStatement.executeUpdate(OracleStatement.java:865)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.logicalcobwebs.proxool.ProxyStatement.invoke(ProxyStatement.java:100)
+	at org.logicalcobwebs.proxool.ProxyStatement.intercept(ProxyStatement.java:57)
+	at oracle.jdbc.internal.OracleStatement$$EnhancerByProxool$$b0088c2b.executeUpdate(<generated>)
+	at com.metarnet.sfpw.base.database.Database.updatePortToEquip(Database.java:694)
+	at com.metarnet.sfpw.base.database.TestDatabase.updatePortToEquip(TestDatabase.java:202)
+	at com.metarnet.sfpw.base.database.TestDatabase.main(TestDatabase.java:198)
+2014-11-10 15:12:41 更新端口去向失败，Io 异常: Connection refused(DESCRIPTION=(TMP=)(VSNNUM=169869568)(ERR=12505)(ERROR_STACK=(ERROR=(CODE=12505)(EMFI=4))))
+
+
+
+java.sql.SQLException: Io 异常: Connection refused(DESCRIPTION=(TMP=)(VSNNUM=169869568)(ERR=12505)(ERROR_STACK=(ERROR=(CODE=12505)(EMFI=4))))
+	at oracle.jdbc.dbaccess.DBError.throwSqlException(DBError.java:180)
+	at oracle.jdbc.dbaccess.DBError.throwSqlException(DBError.java:222)
+	at oracle.jdbc.dbaccess.DBError.throwSqlException(DBError.java:335)
+	at oracle.jdbc.driver.OracleConnection.<init>(OracleConnection.java:361)
+	at oracle.jdbc.driver.OracleDriver.getConnectionInstance(OracleDriver.java:442)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:321)
+	at java.sql.DriverManager.getConnection(DriverManager.java:582)
+	at java.sql.DriverManager.getConnection(DriverManager.java:154)
+	at org.logicalcobwebs.proxool.DefaultConnectionBuilder.buildConnection(DefaultConnectionBuilder.java:39)
+	at org.logicalcobwebs.proxool.Prototyper.buildConnection(Prototyper.java:159)
+	at org.logicalcobwebs.proxool.ConnectionPool.getConnection(ConnectionPool.java:217)
+	at org.logicalcobwebs.proxool.ProxoolDriver.connect(ProxoolDriver.java:89)
+	at java.sql.DriverManager.getConnection(DriverManager.java:582)
+	at java.sql.DriverManager.getConnection(DriverManager.java:207)
+	at com.metarnet.sfpw.base.database.Database.getConnection(Database.java:79)
+	at com.metarnet.sfpw.base.database.Database.updatePortToEquip(Database.java:692)
+	at com.metarnet.sfpw.base.database.TestDatabase.updatePortToEquip(TestDatabase.java:202)
+	at com.metarnet.sfpw.base.database.TestDatabase.main(TestDatabase.java:198)

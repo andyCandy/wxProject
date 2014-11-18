@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="gbk"?>
+<config>
+	<common domain="hw_wx_switch" name="朗讯接口适配器">
+		<!-- 日志系统设置 -->
+		<log dir="D:\collector\kyland\logs"/>
+		<!-- 报活系统配置 -->
+		<alive interval="60" local-ip="127.0.0.1"/>
+		<!-- 消息服务器配置 -->
+		<dpp port="20000" server="127.0.0.1" protocol="test" monitor="e:\\testDataMark"/>
+		<!-- 录入数据库配置 -->
+		<database driver="oracle.jdbc.driver.OracleDriver" housekeeping="select sysdate from dual" maxconn="10" minconn="3">
+			<!-- 登陆用户名 -->
+			<user>sfpw616</user>
+			<!-- 登录口令 -->
+			<password>sfpw616</password>
+			<!-- 数据库连接字符串 -->
+			<uri>jdbc:oracle:thin:@localhost:1521:monitord
+			</uri>
+		</database>
+		<!-- 系统加载的功能模块 -->
+	</common>
+	<!-- 适配器配置 -->
+	
+	<ws server="192.168.189.46" port="9997">
+		<user name="admin" password="Changeme_112233"></user>
+		<serviceName>
+			<alarm>AlarmRetrieval</alarm>
+			<perf>PerformanceManagementRetrieval</perf>
+			<topo>TopologicalLinkRetrieval</topo>
+			<me>ManagedElementRetrieval</me>
+			<port>TerminationPointRetrieval</port>
+			<md>ManagementDomainRetrieval</md>
+		</serviceName>
+	</ws>
+	
+	<requiredMeTypeList>
+		<meType>S7700</meType>
+		<meType>S5700</meType>
+		<meType>S3700</meType>
+	</requiredMeTypeList>
+	
+	<wall target = "127.0.0.1:9301"/>
+	<filepath path = "e:\\testDataMark" />
+	
+	 
+	
+</config>

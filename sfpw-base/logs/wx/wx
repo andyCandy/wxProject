@@ -1,0 +1,114 @@
+2014-11-10 15:11:08 Proxool 0.9.0RC3 (10-Jan-2007 01:38)
+2014-11-10 15:11:08 Recognised proxool property: proxool.driver=oracle.jdbc.driver.OracleDriver
+2014-11-10 15:11:08 Recognised proxool property: proxool.url=jdbc:oracle:thin:@localhost:1521:orcl
+2014-11-10 15:11:08 Delegating property to driver: user=sfpw616
+2014-11-10 15:11:08 Delegating property to driver: password=********
+2014-11-10 15:11:08 Recognised proxool property: proxool.maximum-connection-count=10
+2014-11-10 15:11:08 Recognised proxool property: proxool.minimum-connection-count=3
+2014-11-10 15:11:08 Recognised proxool property: proxool.house-keeping-test-sql=select sysdate from dual
+2014-11-10 15:11:08 Registered shutdownHook
+2014-11-10 15:11:08 Registering 'com.metarnet.sfpw.base.database.Database.kyland_wx_eth' house keeper
+2014-11-10 15:11:08 Starting a house keeper thread
+2014-11-10 15:11:12 Remembering default value: getTransactionIsolation() = 2
+2014-11-10 15:11:12 oracle.jdbc.driver.OracleDriver does not support getHoldability. Proxool doesn't mind.
+2014-11-10 15:11:12 oracle.jdbc.driver.OracleDriver does not support setHoldability. Proxool doesn't mind.
+2014-11-10 15:11:12 Remembering default value: getCatalog() = null
+2014-11-10 15:11:12 Remembering default value: isReadOnly() = false
+2014-11-10 15:11:12 Remembering default value: getTypeMap() = {}
+2014-11-10 15:11:12 Proxool statistics legend: "s - r  (a/t/o)" > s=served, r=refused (only shown if non-zero), a=active, t=total, o=offline (being tested)
+2014-11-10 15:11:12 Proxool statistics legend: "s - r  (a/t/o)" > s=served, r=refused (only shown if non-zero), a=active, t=total, o=offline (being tested)
+2014-11-10 15:11:12 000000 (01/02/00) - Connection #1 created on demand = ACTIVE
+2014-11-10 15:11:12 000000 (01/02/00) - Connection #2 created to achieve minimum of 3 = AVAILABLE
+2014-11-10 15:11:12 Implementing interface oracle.jdbc.internal.OracleConnection
+2014-11-10 15:11:12 Implementing interface java.sql.Wrapper
+2014-11-10 15:11:12 Implementing interface java.sql.Connection
+2014-11-10 15:11:12 Implementing interface oracle.jdbc.driver.ClientDataSupport
+2014-11-10 15:11:12 Implementing interface oracle.jdbc.OracleConnection
+2014-11-10 15:11:12 000001 (01/03/00) - Connection #3 created to achieve minimum of 3 = AVAILABLE
+2014-11-10 15:11:12 Implementing interface oracle.jdbc.internal.OracleStatement
+2014-11-10 15:11:12 Implementing interface java.sql.Statement
+2014-11-10 15:11:12 Implementing interface java.sql.Wrapper
+2014-11-10 15:11:12 Implementing interface oracle.jdbc.OracleStatement
+2014-11-10 15:11:13 Running ShutdownHook
+2014-11-10 15:11:13 Shutting down 'com.metarnet.sfpw.base.database.Database.kyland_wx_eth' pool immediately [Shutdown Hook]
+2014-11-10 15:11:13 000002 (00/02/00) - #0003 removed because of shutdown.
+2014-11-10 15:11:13 Connection #3 closed
+2014-11-10 15:11:13 000002 (00/01/00) - #0002 removed because of shutdown.
+2014-11-10 15:11:13 Connection #2 closed
+2014-11-10 15:11:13 000002 (00/00/00) - #0001 removed because of shutdown.
+2014-11-10 15:11:13 Connection #1 closed
+2014-11-10 15:11:13 'com.metarnet.sfpw.base.database.Database.kyland_wx_eth' pool has been closed down by Shutdown Hook in 16 milliseconds.
+2014-11-10 15:11:13 Stopping Prototyper thread
+2014-11-10 15:11:13 Stopping HouseKeeper thread
+2014-11-10 15:12:40 Proxool 0.9.0RC3 (10-Jan-2007 01:38)
+2014-11-10 15:12:40 Recognised proxool property: proxool.driver=oracle.jdbc.driver.OracleDriver
+2014-11-10 15:12:40 Recognised proxool property: proxool.url=jdbc:oracle:thin:@192.168.90.202:1521:orcl
+2014-11-10 15:12:40 Delegating property to driver: user=sfpw1027
+2014-11-10 15:12:40 Delegating property to driver: password=********
+2014-11-10 15:12:40 Recognised proxool property: proxool.maximum-connection-count=10
+2014-11-10 15:12:40 Recognised proxool property: proxool.minimum-connection-count=3
+2014-11-10 15:12:40 Recognised proxool property: proxool.house-keeping-test-sql=select sysdate from dual
+2014-11-10 15:12:40 Registered shutdownHook
+2014-11-10 15:12:40 Registering 'com.metarnet.sfpw.base.database.Database.kyland_wx_eth' house keeper
+2014-11-10 15:12:40 Starting a house keeper thread
+2014-11-10 15:12:41 Running ShutdownHook
+2014-11-10 15:12:44 Prototype
+java.sql.SQLException: Io 异常: Connection refused(DESCRIPTION=(TMP=)(VSNNUM=169869568)(ERR=12505)(ERROR_STACK=(ERROR=(CODE=12505)(EMFI=4))))
+	at oracle.jdbc.dbaccess.DBError.throwSqlException(DBError.java:180)
+	at oracle.jdbc.dbaccess.DBError.throwSqlException(DBError.java:222)
+	at oracle.jdbc.dbaccess.DBError.throwSqlException(DBError.java:335)
+	at oracle.jdbc.driver.OracleConnection.<init>(OracleConnection.java:361)
+	at oracle.jdbc.driver.OracleDriver.getConnectionInstance(OracleDriver.java:442)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:321)
+	at java.sql.DriverManager.getConnection(DriverManager.java:582)
+	at java.sql.DriverManager.getConnection(DriverManager.java:154)
+	at org.logicalcobwebs.proxool.DefaultConnectionBuilder.buildConnection(DefaultConnectionBuilder.java:39)
+	at org.logicalcobwebs.proxool.Prototyper.buildConnection(Prototyper.java:159)
+	at org.logicalcobwebs.proxool.Prototyper.sweep(Prototyper.java:102)
+	at org.logicalcobwebs.proxool.PrototyperThread.run(PrototyperThread.java:44)
+2014-11-10 15:12:44 Shutting down 'com.metarnet.sfpw.base.database.Database.kyland_wx_eth' pool immediately [Shutdown Hook]
+2014-11-10 15:12:44 'com.metarnet.sfpw.base.database.Database.kyland_wx_eth' pool has been closed down by Shutdown Hook in 0 milliseconds.
+2014-11-10 15:12:44 No connections required manual removal.
+2014-11-10 15:12:44 Stopping Prototyper thread
+2014-11-10 15:12:44 Stopping HouseKeeper thread
+2014-11-10 15:13:25 Proxool 0.9.0RC3 (10-Jan-2007 01:38)
+2014-11-10 15:13:25 Recognised proxool property: proxool.driver=oracle.jdbc.driver.OracleDriver
+2014-11-10 15:13:25 Recognised proxool property: proxool.url=jdbc:oracle:thin:@192.168.90.202:1521:monitord
+2014-11-10 15:13:25 Delegating property to driver: user=sfpw1027
+2014-11-10 15:13:25 Delegating property to driver: password=********
+2014-11-10 15:13:25 Recognised proxool property: proxool.maximum-connection-count=10
+2014-11-10 15:13:25 Recognised proxool property: proxool.minimum-connection-count=3
+2014-11-10 15:13:25 Recognised proxool property: proxool.house-keeping-test-sql=select sysdate from dual
+2014-11-10 15:13:25 Registered shutdownHook
+2014-11-10 15:13:25 Registering 'com.metarnet.sfpw.base.database.Database.kyland_wx_eth' house keeper
+2014-11-10 15:13:25 Starting a house keeper thread
+2014-11-10 15:13:25 Remembering default value: getTransactionIsolation() = 2
+2014-11-10 15:13:25 oracle.jdbc.driver.OracleDriver does not support getHoldability. Proxool doesn't mind.
+2014-11-10 15:13:25 oracle.jdbc.driver.OracleDriver does not support setHoldability. Proxool doesn't mind.
+2014-11-10 15:13:25 Remembering default value: getCatalog() = null
+2014-11-10 15:13:25 Remembering default value: isReadOnly() = false
+2014-11-10 15:13:25 Remembering default value: getTypeMap() = {}
+2014-11-10 15:13:25 Proxool statistics legend: "s - r  (a/t/o)" > s=served, r=refused (only shown if non-zero), a=active, t=total, o=offline (being tested)
+2014-11-10 15:13:25 000000 (01/02/00) - Connection #1 created on demand = ACTIVE
+2014-11-10 15:13:25 000000 (01/02/00) - Connection #2 created to achieve minimum of 3 = AVAILABLE
+2014-11-10 15:13:25 000001 (01/03/00) - Connection #3 created to achieve minimum of 3 = AVAILABLE
+2014-11-10 15:13:25 Implementing interface oracle.jdbc.OracleConnection
+2014-11-10 15:13:25 Implementing interface java.sql.Wrapper
+2014-11-10 15:13:25 Implementing interface oracle.jdbc.driver.ClientDataSupport
+2014-11-10 15:13:25 Implementing interface oracle.jdbc.internal.OracleConnection
+2014-11-10 15:13:25 Implementing interface java.sql.Connection
+2014-11-10 15:13:25 Implementing interface oracle.jdbc.internal.OracleStatement
+2014-11-10 15:13:25 Implementing interface java.sql.Wrapper
+2014-11-10 15:13:25 Implementing interface java.sql.Statement
+2014-11-10 15:13:25 Implementing interface oracle.jdbc.OracleStatement
+2014-11-10 15:13:26 Running ShutdownHook
+2014-11-10 15:13:26 Shutting down 'com.metarnet.sfpw.base.database.Database.kyland_wx_eth' pool immediately [Shutdown Hook]
+2014-11-10 15:13:26 000002 (00/02/00) - #0003 removed because of shutdown.
+2014-11-10 15:13:26 Connection #3 closed
+2014-11-10 15:13:26 000002 (00/01/00) - #0002 removed because of shutdown.
+2014-11-10 15:13:26 Connection #2 closed
+2014-11-10 15:13:26 000002 (00/00/00) - #0001 removed because of shutdown.
+2014-11-10 15:13:26 Connection #1 closed
+2014-11-10 15:13:26 'com.metarnet.sfpw.base.database.Database.kyland_wx_eth' pool has been closed down by Shutdown Hook in 5 milliseconds.
+2014-11-10 15:13:26 Stopping Prototyper thread
+2014-11-10 15:13:26 Stopping HouseKeeper thread

@@ -1,0 +1,170 @@
+2014-11-13 10:42:00 
+
+
+
+com.metarnet.sfpw.base.exception.ConnectionException
+	at com.metarnet.sfpw.kyland.mgr.KylandAlarmMgrImpl.syncAllAlarm(KylandAlarmMgrImpl.java:123)
+	at com.metarnet.sfpw.base.timedtask.AlarmTask.execute(AlarmTask.java:27)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.NullPointerException
+	at com.metarnet.sfpw.kyland.manager.EmsMgr.getCurrentAlarm(EmsMgr.java:166)
+	at com.metarnet.sfpw.kyland.mgr.KylandAlarmMgrImpl.getAllActiveAlarm(KylandAlarmMgrImpl.java:139)
+	at com.metarnet.sfpw.kyland.mgr.KylandAlarmMgrImpl.syncAllAlarm(KylandAlarmMgrImpl.java:117)
+	... 3 more
+2014-11-13 10:42:00 重连线程启动，开始重连。。。
+
+
+
+2014-11-13 10:42:00 driver重连网管,先停止driver，在重新初始化
+
+
+
+2014-11-13 10:42:00 开始停止Driver。。。
+
+
+
+2014-11-13 10:52:00 执行查询任务失败，原因:可能是连接断开了,同步性能失败，连接异常
+
+
+
+com.metarnet.sfpw.base.exception.ConnectionException
+	at com.metarnet.sfpw.kyland.mgr.KylandPerfMgrImpl.syncAllPerf(KylandPerfMgrImpl.java:100)
+	at com.metarnet.sfpw.base.timedtask.PerfTask.execute(PerfTask.java:24)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.NullPointerException
+	at com.metarnet.sfpw.kyland.manager.ManangeElementMgr.getAllManagedElementNames(ManangeElementMgr.java:126)
+	at com.metarnet.sfpw.kyland.mgr.KylandPerfMgrImpl.syncAllPerf(KylandPerfMgrImpl.java:94)
+	... 3 more
+2014-11-13 10:52:00 重连线程启动，开始重连。。。
+
+
+
+2014-11-13 10:52:00 driver重连网管,先停止driver，在重新初始化
+
+
+
+2014-11-13 10:52:00 开始停止Driver。。。
+
+
+
+2014-11-13 11:00:00 执行配置跟新任务失败，原因:可能是连接异常,null
+
+
+
+com.metarnet.sfpw.base.exception.ConnectionException
+	at com.metarnet.sfpw.kyland.mgr.KylandConfiguration.syncAllCfg(KylandConfiguration.java:101)
+	at com.metarnet.sfpw.base.timedtask.ConfTask.execute(ConfTask.java:39)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.NullPointerException
+	at com.metarnet.sfpw.kyland.manager.ManangeElementMgr.getManagedElementList(ManangeElementMgr.java:55)
+	at com.metarnet.sfpw.kyland.mgr.KylandConfiguration.syncAllCfg(KylandConfiguration.java:97)
+	... 3 more
+2014-11-13 11:00:00 执行查询任务失败，原因:可能是连接断开了,同步性能失败，连接异常
+
+
+
+com.metarnet.sfpw.base.exception.ConnectionException
+	at com.metarnet.sfpw.kyland.mgr.KylandPerfMgrImpl.syncAllPerf(KylandPerfMgrImpl.java:100)
+	at com.metarnet.sfpw.base.timedtask.PerfTask.execute(PerfTask.java:24)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.NullPointerException
+	at com.metarnet.sfpw.kyland.manager.ManangeElementMgr.getAllManagedElementNames(ManangeElementMgr.java:126)
+	at com.metarnet.sfpw.kyland.mgr.KylandPerfMgrImpl.syncAllPerf(KylandPerfMgrImpl.java:94)
+	... 3 more
+2014-11-13 11:00:00 重连线程启动，开始重连。。。
+
+
+
+2014-11-13 11:00:00 driver重连网管,先停止driver，在重新初始化
+
+
+
+2014-11-13 11:00:00 开始停止Driver。。。
+
+
+
+2014-11-13 11:00:00 重连线程启动，开始重连。。。
+
+
+
+2014-11-13 11:00:00 driver重连网管,先停止driver，在重新初始化
+
+
+
+2014-11-13 11:00:00 开始停止Driver。。。
+
+
+
+2014-11-13 11:00:00 
+
+
+
+com.metarnet.sfpw.base.exception.ConnectionException
+	at com.metarnet.sfpw.kyland.mgr.KylandAlarmMgrImpl.syncAllAlarm(KylandAlarmMgrImpl.java:123)
+	at com.metarnet.sfpw.base.timedtask.AlarmTask.execute(AlarmTask.java:27)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.NullPointerException
+	at com.metarnet.sfpw.kyland.manager.EmsMgr.getCurrentAlarm(EmsMgr.java:166)
+	at com.metarnet.sfpw.kyland.mgr.KylandAlarmMgrImpl.getAllActiveAlarm(KylandAlarmMgrImpl.java:139)
+	at com.metarnet.sfpw.kyland.mgr.KylandAlarmMgrImpl.syncAllAlarm(KylandAlarmMgrImpl.java:117)
+	... 3 more
+2014-11-13 11:00:00 执行拓扑跟新任务失败，原因:可能是连接异常,null
+
+
+
+com.metarnet.sfpw.base.exception.ConnectionException
+	at com.metarnet.sfpw.kyland.mgr.KylandConfiguration.syncTopo(KylandConfiguration.java:140)
+	at com.metarnet.sfpw.base.timedtask.ConfTask.execute(ConfTask.java:48)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.NullPointerException
+	at com.metarnet.sfpw.kyland.manager.EmsMgr.getToptopoList(EmsMgr.java:69)
+	at com.metarnet.sfpw.kyland.manager.EmsMgr.getAllTopoLink(EmsMgr.java:141)
+	at com.metarnet.sfpw.kyland.mgr.KylandConfiguration.syncTopo(KylandConfiguration.java:136)
+	... 3 more
+2014-11-13 11:03:00 执行配置跟新任务失败，原因:可能是连接异常,null
+
+
+
+com.metarnet.sfpw.base.exception.ConnectionException
+	at com.metarnet.sfpw.kyland.mgr.KylandConfiguration.syncAllCfg(KylandConfiguration.java:101)
+	at com.metarnet.sfpw.base.timedtask.ConfTask.execute(ConfTask.java:39)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.NullPointerException
+	at com.metarnet.sfpw.kyland.manager.ManangeElementMgr.getManagedElementList(ManangeElementMgr.java:55)
+	at com.metarnet.sfpw.kyland.mgr.KylandConfiguration.syncAllCfg(KylandConfiguration.java:97)
+	... 3 more
+2014-11-13 11:03:00 执行拓扑跟新任务失败，原因:可能是连接异常,null
+
+
+
+com.metarnet.sfpw.base.exception.ConnectionException
+	at com.metarnet.sfpw.kyland.mgr.KylandConfiguration.syncTopo(KylandConfiguration.java:140)
+	at com.metarnet.sfpw.base.timedtask.ConfTask.execute(ConfTask.java:48)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.NullPointerException
+	at com.metarnet.sfpw.kyland.manager.EmsMgr.getToptopoList(EmsMgr.java:69)
+	at com.metarnet.sfpw.kyland.manager.EmsMgr.getAllTopoLink(EmsMgr.java:141)
+	at com.metarnet.sfpw.kyland.mgr.KylandConfiguration.syncTopo(KylandConfiguration.java:136)
+	... 3 more
+2014-11-13 11:03:00 
+
+
+
+com.metarnet.sfpw.base.exception.ConnectionException
+	at com.metarnet.sfpw.kyland.mgr.KylandAlarmMgrImpl.syncAllAlarm(KylandAlarmMgrImpl.java:123)
+	at com.metarnet.sfpw.base.timedtask.AlarmTask.execute(AlarmTask.java:27)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.NullPointerException
+	at com.metarnet.sfpw.kyland.manager.EmsMgr.getCurrentAlarm(EmsMgr.java:166)
+	at com.metarnet.sfpw.kyland.mgr.KylandAlarmMgrImpl.getAllActiveAlarm(KylandAlarmMgrImpl.java:139)
+	at com.metarnet.sfpw.kyland.mgr.KylandAlarmMgrImpl.syncAllAlarm(KylandAlarmMgrImpl.java:117)
+	... 3 more

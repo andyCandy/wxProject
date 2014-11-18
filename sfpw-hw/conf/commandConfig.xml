@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Config tip="接口命令配置">
+	<AlarmConfig tip="告警采集命令信息">
+		<CollectAllAlarmComm tip="查所有未恢复的告警">
+			LST-ALARM:::CTAG::BEGINTIME=2013-07-01 00-00-00,FAULTFLAG=Fault-Only;
+		</CollectAllAlarmComm>
+	</AlarmConfig>
+	<ResConfig tip="配置采集命令信息">
+		<CollectAllOltComm tip="查全网所有OLT">
+			LST-DEVICE:::CTAG::;
+		</CollectAllOltComm>
+		<CollectAllOnuOfOltComm tip="查某OLT下所有ONU">
+			LST-ONU::OLTID=${oltId}:CTAG::;
+		</CollectAllOnuOfOltComm>
+		<CollectAllShelfComm tip="查询全网设备机框信息">
+			LST-SHELF:::CTAG::;
+		</CollectAllShelfComm>
+		<CollectAllShelfOfOltComm tip="查询某OLT设备机框信息">
+			LST-SHELF::OLTID=${oltId}:CTAG::;
+		</CollectAllShelfOfOltComm>
+		<CollectAllShelfOfOnuWithIpComm tip="查询某个具有管理IP的ONU设备机框信息">
+			LST-SHELF::ONUIP=${onuIp}:CTAG::;
+		</CollectAllShelfOfOnuWithIpComm>
+		<CollectAllShelfOfOnuWithoutIpComm tip="查询某个不具有管理IP的ONU设备机框信息">
+			LST-SHELF::OLTID=${oltId},PONID=${ponId},ONUIDTYPE=${onuIdType},ONUID=${onuId}:CTAG::;
+		</CollectAllShelfOfOnuWithoutIpComm>
+		<CollectAllBoardComm tip="查询全网设备单板信息">
+			LST-BOARD:::CTAG::;
+		</CollectAllBoardComm>
+		<CollectAllBoardOfOltComm tip="查询OLT设备单板信息">
+			LST-BOARD::OLTID=${oltId}:CTAG::;
+		</CollectAllBoardOfOltComm>
+		<CollectAllBoardOfOnuWithIpComm tip="查询某个具有管理IP的ONU设备单板信息">
+			LST-BOARD::ONUIP=${onuIp}:CTAG::;
+		</CollectAllBoardOfOnuWithIpComm>
+		<CollectAllBoardOfOnuWithoutIpComm tip="查询某个不具有管理IP的ONU设备单板信息">
+			LST-BOARD::OLTID=${oltId},PONID=${ponId},ONUIDTYPE=${onuIdType},ONUID=${onuId}:CTAG::;
+		</CollectAllBoardOfOnuWithoutIpComm>
+		<CollectPortOfOltComm tip="根据oltname查询olt下端口">
+			LST-PORT::DEV=${oltName}:CATG::SHOWOPTION=NAME ALIAS PSPEED PDIRECT LOOPSTAT TESTSTAT FEC RN AState;
+		</CollectPortOfOltComm>
+	</ResConfig>
+	<PmConfig>
+		<CollectOltDeviceInfoComm tip="查某OLT的网元信息">
+			LST-DEVINFO::OLTID=${oltId}:CTAG::;
+		</CollectOltDeviceInfoComm>
+		<CollectOnuWithIPDeviceInfoComm tip="查某带管理IP的ONU的网元信息">
+			LST-DEVINFO::ONUIP=${onuIp}:CTAG::;
+		</CollectOnuWithIPDeviceInfoComm>
+		<CollectOnuWithoutIPDeviceInfoComm tip="查某不带管理IP的ONU的网元信息">
+			LST-DEVINFO::OLTID=${oltId},PONID=${ponId},ONUIDTYPE=${onuIdType},ONUID=${onuId}:CTAG::;
+		</CollectOnuWithoutIPDeviceInfoComm>
+		<CollectOltBoardInfoComm tip="查某OLT的单板信息">
+			LST-BRDINFO::OLTID=${oltId}:CTAG::;
+		</CollectOltBoardInfoComm>
+		<CollectOnuWithIPBoardInfoComm tip="查某带管理IP的ONU的单板信息">
+			LST-BRDINFO::ONUIP=${onuIp}:CTAG::;
+		</CollectOnuWithIPBoardInfoComm>
+		<CollectOnuWithoutIPBoardInfoComm tip="查某不带管理IP的ONU的单板信息">
+			LST-BRDINFO::OLTID=${oltId},PONID=${ponId},ONUIDTYPE=${onuIdType},ONUID=${onuId}:CTAG::;
+		</CollectOnuWithoutIPBoardInfoComm>
+		<CollectOnuOnuStateComm tip="查OLT某PON口下的ONU的状态信息">
+			LST-ONUSTATE::OLTID=${oltId},PONID=${ponId}:CTAG::;
+		</CollectOnuOnuStateComm>
+		
+		
+		<CollectOltPonPerfComm tip="查某OLT的PON口的链路统计信息">
+			LST-PONPERF::OLTID=${oltId},PONID=${ponId}:CTAG::;
+		</CollectOltPonPerfComm>
+		<CollectOnuWithIPPonPerfComm tip="查某带管理IP的ONU的PON口的链路统计信息">
+			LST-PONPERF::ONUIP=${onuIp}:CTAG::;
+		</CollectOnuWithIPPonPerfComm>
+		<CollectOnuWithoutIPPonPerfComm tip="查某不带管理IP的ONU的PON口的链路统计信息">
+			LST-PONPERF::OLTID=${oltId},PONID=${ponId},ONUIDTYPE=${onuIdType},ONUID=${onuId}:CTAG::;
+		</CollectOnuWithoutIPPonPerfComm>
+		
+		<CollectOltOmddmComm tip="查某OLT的PON口的光模块DDM信息">
+			LST-OMDDM::OLTID=${oltId},PONID=${ponId}:CTAG::;
+		</CollectOltOmddmComm>
+		<CollectOnuWithIPOmddmComm tip="查某带管理IP的ONU的PON口的光模块DDM信息">
+			LST-OMDDM::ONUIP=${onuIp}:CTAG::;
+		</CollectOnuWithIPOmddmComm>
+		<CollectOnuWithoutIPOmddmComm tip="查某不带管理IP的ONU的PON口的光模块DDM信息">
+			LST-OMDDM::OLTID=${oltId},PONID=${ponId},ONUIDTYPE=${onuIdType},ONUID=${onuId}:CTAG::;
+		</CollectOnuWithoutIPOmddmComm>
+	</PmConfig>
+</Config>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="gbk"?>
+<config>
+	<common domain="kyland_wx_eth" name="朗讯接口适配器">
+		<!-- 日志系统设置 -->
+		<log dir="D:\collector\kyland\logs"/>
+		<!-- 报活系统配置 -->
+		<alive interval="60" local-ip="127.0.0.1"/>
+		<!-- 消息服务器配置 -->
+		<dpp port="20000" server="127.0.0.1" protocol="test" monitor="e:\\testDataMark"/>
+		<!-- 录入数据库配置 -->
+		<database driver="oracle.jdbc.driver.OracleDriver" housekeeping="select sysdate from dual" maxconn="10" minconn="3">
+			<!-- 登陆用户名 -->
+			<user>sfpw616</user>
+			<!-- 登录口令 -->
+			<password>sfpw616</password>
+			<!-- 数据库连接字符串 -->
+			<uri>jdbc:oracle:thin:@localhost:1521:orcl
+			</uri>
+		</database>
+		<!-- 系统加载的功能模块 -->
+	
+	</common>
+	<!-- 适配器配置 -->
+	<adapter>
+		<!-- 告警处理线程 -->
+		<pool-size>1</pool-size>
+		<!-- 本地主机信息 port参数在需要限定通讯端口时指定 ；path参数为绝对路径，用于指定性能文件传送到本地主机的位置 -->
+		<localhost host="localhost" password="metarnet" path="." port="9900" user="metarnet"/>
+		<!-- 命名服务 -->
+		<name-service addr="192.168.0.199" port="9900"/>
+		<!-- 接口会话 -->
+		<session howmany="150" ithowmany="150" password="admin" user="admin">
+			<!-- 会话工厂 -->
+			<factory>Services./NBI./TMF./TMF_EmsSessionFactory_I.
+			</factory>
+			<!-- 事件通道connect=[true, false], type=[push, pull] -->
+			<event-channel connect="true" type="push">
+				<!-- 探测时间间隔 -->
+				<ping>60</ping>
+				<!-- 告警时间时区[-12-+12]，通常不需要指定，告警时间出现偏差时修正 -->
+				<time-zone>8</time-zone>
+			</event-channel>
+			<!-- 代理生产者 -->
+			<proxy-supplier></proxy-supplier>
+		</session>
+		
+	</adapter>
+	<wall target = "127.0.0.1:9301"/>
+	<filepath path = "e:\\testDataMark" />
+	
+	 
+	
+</config>

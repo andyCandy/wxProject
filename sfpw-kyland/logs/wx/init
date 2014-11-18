@@ -1,0 +1,120 @@
+2014-11-13 10:41:55 初始化Driver开始。。。
+2014-11-13 10:41:55 初始化ORB完毕。。。
+2014-11-13 10:41:55 启动Driver开始。。。
+2014-11-13 10:41:55 获取rootPOA异常：Could not create server socket
+org.omg.CORBA.INITIALIZE: Could not create server socket  vmcid: 0x0  minor code: 0  completed: No
+	at org.jacorb.orb.iiop.IIOPListener$Acceptor.createServerSocket(Unknown Source)
+	at org.jacorb.orb.iiop.IIOPListener$Acceptor.init(Unknown Source)
+	at org.jacorb.orb.iiop.IIOPListener.configure(Unknown Source)
+	at org.jacorb.orb.etf.FactoriesBase.create_listener(Unknown Source)
+	at org.jacorb.orb.BasicAdapter.configure(Unknown Source)
+	at org.jacorb.orb.ORB.getRootPOA(Unknown Source)
+	at org.jacorb.orb.ORB.resolve_initial_references(Unknown Source)
+	at com.metarnet.sfpw.kyland.driver.KylandCorbaDriver.connectEMS(KylandCorbaDriver.java:157)
+	at com.metarnet.sfpw.kyland.driver.KylandCorbaDriver.init(KylandCorbaDriver.java:500)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1614)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1485)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:461)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:626)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.metarnet.sfpw.kyland.Main.main(Main.java:10)
+2014-11-13 10:41:55 连接网管异常
+2014-11-13 10:41:55 连接网管成功
+2014-11-13 10:41:55 启动orb异常
+2014-11-13 10:41:55 启动网管探测成功，初始化Driver成功。。。
+2014-11-13 10:41:55 告警管理初始化
+2014-11-13 10:41:56 任务管理启动成功
+2014-11-13 10:41:56 DCPHandler初始化成功。。。
+2014-11-13 10:51:54 初始化Driver开始。。。
+2014-11-13 10:51:54 初始化ORB完毕。。。
+2014-11-13 10:51:54 启动Driver开始。。。
+2014-11-13 10:51:54 获取rootPOA异常：Could not create server socket
+org.omg.CORBA.INITIALIZE: Could not create server socket  vmcid: 0x0  minor code: 0  completed: No
+	at org.jacorb.orb.iiop.IIOPListener$Acceptor.createServerSocket(Unknown Source)
+	at org.jacorb.orb.iiop.IIOPListener$Acceptor.init(Unknown Source)
+	at org.jacorb.orb.iiop.IIOPListener.configure(Unknown Source)
+	at org.jacorb.orb.etf.FactoriesBase.create_listener(Unknown Source)
+	at org.jacorb.orb.BasicAdapter.configure(Unknown Source)
+	at org.jacorb.orb.ORB.getRootPOA(Unknown Source)
+	at org.jacorb.orb.ORB.resolve_initial_references(Unknown Source)
+	at com.metarnet.sfpw.kyland.driver.KylandCorbaDriver.connectEMS(KylandCorbaDriver.java:157)
+	at com.metarnet.sfpw.kyland.driver.KylandCorbaDriver.init(KylandCorbaDriver.java:500)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1614)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1485)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:461)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:626)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.metarnet.sfpw.kyland.Main.main(Main.java:10)
+2014-11-13 10:51:54 连接网管异常
+2014-11-13 10:51:54 连接网管成功
+2014-11-13 10:51:54 启动orb异常
+2014-11-13 10:51:54 启动网管探测成功，初始化Driver成功。。。
+2014-11-13 10:51:54 告警管理初始化
+2014-11-13 10:51:54 任务管理启动成功
+2014-11-13 10:51:55 DCPHandler初始化成功。。。
+2014-11-13 10:57:54 初始化Driver开始。。。
+2014-11-13 10:57:54 初始化ORB完毕。。。
+2014-11-13 10:57:54 启动Driver开始。。。
+2014-11-13 10:57:54 获取rootPOA异常：Could not create server socket
+org.omg.CORBA.INITIALIZE: Could not create server socket  vmcid: 0x0  minor code: 0  completed: No
+	at org.jacorb.orb.iiop.IIOPListener$Acceptor.createServerSocket(Unknown Source)
+	at org.jacorb.orb.iiop.IIOPListener$Acceptor.init(Unknown Source)
+	at org.jacorb.orb.iiop.IIOPListener.configure(Unknown Source)
+	at org.jacorb.orb.etf.FactoriesBase.create_listener(Unknown Source)
+	at org.jacorb.orb.BasicAdapter.configure(Unknown Source)
+	at org.jacorb.orb.ORB.getRootPOA(Unknown Source)
+	at org.jacorb.orb.ORB.resolve_initial_references(Unknown Source)
+	at com.metarnet.sfpw.kyland.driver.KylandCorbaDriver.connectEMS(KylandCorbaDriver.java:157)
+	at com.metarnet.sfpw.kyland.driver.KylandCorbaDriver.init(KylandCorbaDriver.java:500)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1614)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1485)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:461)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:626)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.metarnet.sfpw.kyland.Main.main(Main.java:10)
+2014-11-13 10:57:54 连接网管异常
+2014-11-13 10:57:54 连接网管成功
+2014-11-13 10:57:54 启动orb异常
+2014-11-13 10:57:54 启动网管探测成功，初始化Driver成功。。。
+2014-11-13 10:57:54 告警管理初始化
+2014-11-13 10:57:54 任务管理启动成功
+2014-11-13 10:57:54 DCPHandler初始化成功。。。

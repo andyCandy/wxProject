@@ -1,0 +1,28 @@
+2014-08-20 12:04:26 saveTL:TopologicalLink [linkcode=4fc2a4eefad02b19f15c, linkid=0, aMeId=57, aSlotId=null, aPortId=null, zMeId=80, zSlotId=null, zPortId=2, label=null, rate=null, direction=null, nativeEmsName=null, type=null]
+
+
+
+2014-08-20 12:05:17 saveTL:TopologicalLink [linkcode=4fc2a4eefad02b19f15c, linkid=0, aMeId=57, aSlotId=null, aPortId=null, zMeId=80, zSlotId=null, zPortId=2, label=null, rate=null, direction=CD_BI, nativeEmsName=null, type=null]
+
+
+
+2014-08-20 12:47:28 saveTL:TopologicalLink [linkcode=4fc2a4eefad02b19f15c, linkid=0, aMeId=57, aSlotId=null, aPortId=null, zMeId=80, zSlotId=null, zPortId=2, label=userlabel, rate=1000, direction=CD_BI, nativeEmsName=topotest, type=null]
+
+
+
+2014-08-20 12:47:59 saveTL:TopologicalLink [linkcode=4fc2a4eefad02b19f15c, linkid=0, aMeId=57, aSlotId=0, aPortId=null, zMeId=80, zSlotId=0, zPortId=2, label=userlabel, rate=1000, direction=CD_BI, nativeEmsName=topotest, type=null]
+
+
+
+2014-08-20 12:48:48 saveTL:TopologicalLink [linkcode=4fc2a4eefad02b19f15c, linkid=0, aMeId=57, aSlotId=0, aPortId=null, zMeId=80, zSlotId=0, zPortId=2, label=userlabel, rate=1000, direction=CD_BI, nativeEmsName=topotest, type=null]
+
+
+
+2014-08-20 12:49:28 saveTL:TopologicalLink [linkcode=4fc2a4eefad02b19f15c, linkid=0, aMeId=57, aSlotId=0, aPortId=null, zMeId=80, zSlotId=0, zPortId=2, label=userlabel, rate=1000, direction=CD_BI, nativeEmsName=topotest, type=null]
+
+
+
+2014-08-20 12:50:45 saveTL:TopologicalLink [linkcode=4fc2a4eefad02b19f15c, linkid=0, aMeId=57, aSlotId=0, aPortId=null, zMeId=80, zSlotId=0, zPortId=2, label=userlabel, rate=1000, direction=CD_BI, nativeEmsName=topotest, type=null]
+
+
+

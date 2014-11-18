@@ -1,0 +1,25 @@
+2014-11-10 15:56:58 更新端口去向失败，ORA-00904: "GETLINKEQUIP": 标识符无效
+
+
+
+
+java.sql.SQLException: ORA-00904: "GETLINKEQUIP": 标识符无效
+
+	at oracle.jdbc.dbaccess.DBError.throwSqlException(DBError.java:180)
+	at oracle.jdbc.ttc7.TTIoer.processError(TTIoer.java:208)
+	at oracle.jdbc.ttc7.Oall7.receive(Oall7.java:543)
+	at oracle.jdbc.ttc7.TTC7Protocol.doOall7(TTC7Protocol.java:1451)
+	at oracle.jdbc.ttc7.TTC7Protocol.parseExecuteFetch(TTC7Protocol.java:862)
+	at oracle.jdbc.driver.OracleStatement.executeNonQuery(OracleStatement.java:1846)
+	at oracle.jdbc.driver.OracleStatement.doExecuteOther(OracleStatement.java:1771)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:2361)
+	at oracle.jdbc.driver.OracleStatement.executeUpdate(OracleStatement.java:865)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.logicalcobwebs.proxool.ProxyStatement.invoke(ProxyStatement.java:100)
+	at org.logicalcobwebs.proxool.ProxyStatement.intercept(ProxyStatement.java:57)
+	at oracle.jdbc.internal.OracleStatement$$EnhancerByProxool$$411a3de0.executeUpdate(<generated>)
+	at com.metarnet.sfpw.hw.database.EponDatabase.updatePortToEquip(EponDatabase.java:2050)
+	at com.metarnet.sfpw.hw.database.EponDatabase.main(EponDatabase.java:2036)

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="gbk"?>
+<config>
+	<common domain="hw_wx_epon" name="朗讯接口适配器">
+		<!-- 日志系统设置 -->
+		<log dir="D:\collector\hwEpon\logs"/>
+		<!-- 报活系统配置 -->
+		<alive interval="60" local-ip="127.0.0.1"/>
+		<!-- 消息服务器配置 -->
+		<dpp port="20000" server="127.0.0.1" protocol="test" monitor="d:\\testDataMark"/>
+		<!-- 录入数据库配置 -->
+		<database driver="oracle.jdbc.driver.OracleDriver" housekeeping="select sysdate from dual" maxconn="10" minconn="3">
+			<!-- 登陆用户名 -->
+			<user>sfpw616</user>
+			<!-- 登录口令 -->
+			<password>sfpw616</password>
+			<!-- 数据库连接字符串 -->
+			<uri>jdbc:oracle:thin:@192.168.90.190:1521:orcl
+			</uri>
+		</database>
+	</common>
+	<!-- 适配器配置 -->
+	
+	<wall target = "127.0.0.1:9301"/>
+	<filepath path = "e:\\testDataMark" />
+	
+	<ems tip="主服务器"> 
+      <param name="domain" value="_Wuxi" tip="区域"/>  
+      <param name="serviceDesc" serviceDesc="EMS=Huawei_iManager_U2000" tip="服务描述"/>  
+      <param name="serverHost" serverHost="192.168.189.46" tip="HuaWei iManager U2000网管服务器地址"/>  
+      <param name="serverPort" serverPort="13027" tip="服务端口 "/> <!-- 9819-->
+      <param name="username" username="admin" tip="用户名"/>  
+      <param name="password" password="Changeme_112233" tip="密码"/>
+      <param name="reTimeOut" reTimeOut="60" tip="重练间隔时间(秒)"/>
+      <param name="loginComm" loginComm="LOGIN:::1::UN=${username},PWD=${password};" tip="登录命令"/>
+      <param name="logoutComm" logoutComm="LOGOUT:::8::;" tip="退出命令"/>
+      <param name="shakeHandComm" shakeHandComm="SHAKEHAND:::8::;" tip="握手命令"/>
+	   <param name="alarmTime" value="180" tip="告警采集周期(秒)"/>
+    </ems> 
+	
+</config>

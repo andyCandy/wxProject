@@ -1,0 +1,150 @@
+2014-08-20 12:05:17 kyland_wx_eth:TopologicalLink [linkcode=4fc2a4eefad02b19f15c, linkid=0, aMeId=57, aSlotId=null, aPortId=null, zMeId=80, zSlotId=null, zPortId=2, label=null, rate=null, direction=CD_BI, nativeEmsName=null, type=null]
+
+
+
+2014-08-20 12:05:17 ORA-01006: 绑定变量不存在
+
+
+
+
+java.sql.SQLException: ORA-01006: 绑定变量不存在
+
+	at oracle.jdbc.dbaccess.DBError.throwSqlException(DBError.java:180)
+	at oracle.jdbc.ttc7.TTIoer.processError(TTIoer.java:208)
+	at oracle.jdbc.ttc7.Oall7.receive(Oall7.java:543)
+	at oracle.jdbc.ttc7.TTC7Protocol.doOall7(TTC7Protocol.java:1451)
+	at oracle.jdbc.ttc7.TTC7Protocol.parseExecuteFetch(TTC7Protocol.java:862)
+	at oracle.jdbc.driver.OracleStatement.executeNonQuery(OracleStatement.java:1846)
+	at oracle.jdbc.driver.OracleStatement.doExecuteOther(OracleStatement.java:1771)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:2361)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:422)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:487)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.logicalcobwebs.proxool.ProxyStatement.invoke(ProxyStatement.java:100)
+	at org.logicalcobwebs.proxool.ProxyStatement.intercept(ProxyStatement.java:57)
+	at $java.sql.PreparedStatement$$EnhancerByProxool$$ef86a984.execute(<generated>)
+	at com.metarnet.sfpw.base.database.Database.saveTL(Database.java:429)
+	at com.metarnet.sfpw.base.database.Database.main(Database.java:100)
+2014-08-20 12:47:28 kyland_wx_eth:TopologicalLink [linkcode=4fc2a4eefad02b19f15c, linkid=0, aMeId=57, aSlotId=null, aPortId=null, zMeId=80, zSlotId=null, zPortId=2, label=userlabel, rate=1000, direction=CD_BI, nativeEmsName=topotest, type=null]
+
+
+
+2014-08-20 12:47:28 ORA-01006: 绑定变量不存在
+
+
+
+
+java.sql.SQLException: ORA-01006: 绑定变量不存在
+
+	at oracle.jdbc.dbaccess.DBError.throwSqlException(DBError.java:180)
+	at oracle.jdbc.ttc7.TTIoer.processError(TTIoer.java:208)
+	at oracle.jdbc.ttc7.Oall7.receive(Oall7.java:543)
+	at oracle.jdbc.ttc7.TTC7Protocol.doOall7(TTC7Protocol.java:1451)
+	at oracle.jdbc.ttc7.TTC7Protocol.parseExecuteFetch(TTC7Protocol.java:862)
+	at oracle.jdbc.driver.OracleStatement.executeNonQuery(OracleStatement.java:1846)
+	at oracle.jdbc.driver.OracleStatement.doExecuteOther(OracleStatement.java:1771)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:2361)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:422)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:487)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.logicalcobwebs.proxool.ProxyStatement.invoke(ProxyStatement.java:100)
+	at org.logicalcobwebs.proxool.ProxyStatement.intercept(ProxyStatement.java:57)
+	at $java.sql.PreparedStatement$$EnhancerByProxool$$d170e08a.execute(<generated>)
+	at com.metarnet.sfpw.base.database.Database.saveTL(Database.java:432)
+	at com.metarnet.sfpw.base.database.Database.main(Database.java:103)
+2014-08-20 12:47:59 kyland_wx_eth:TopologicalLink [linkcode=4fc2a4eefad02b19f15c, linkid=0, aMeId=57, aSlotId=0, aPortId=null, zMeId=80, zSlotId=0, zPortId=2, label=userlabel, rate=1000, direction=CD_BI, nativeEmsName=topotest, type=null]
+
+
+
+2014-08-20 12:47:59 ORA-01006: 绑定变量不存在
+
+
+
+
+java.sql.SQLException: ORA-01006: 绑定变量不存在
+
+	at oracle.jdbc.dbaccess.DBError.throwSqlException(DBError.java:180)
+	at oracle.jdbc.ttc7.TTIoer.processError(TTIoer.java:208)
+	at oracle.jdbc.ttc7.Oall7.receive(Oall7.java:543)
+	at oracle.jdbc.ttc7.TTC7Protocol.doOall7(TTC7Protocol.java:1451)
+	at oracle.jdbc.ttc7.TTC7Protocol.parseExecuteFetch(TTC7Protocol.java:862)
+	at oracle.jdbc.driver.OracleStatement.executeNonQuery(OracleStatement.java:1846)
+	at oracle.jdbc.driver.OracleStatement.doExecuteOther(OracleStatement.java:1771)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:2361)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:422)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:487)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.logicalcobwebs.proxool.ProxyStatement.invoke(ProxyStatement.java:100)
+	at org.logicalcobwebs.proxool.ProxyStatement.intercept(ProxyStatement.java:57)
+	at oracle.jdbc.internal.OracleCallableStatement$$EnhancerByProxool$$99bafe14.execute(<generated>)
+	at com.metarnet.sfpw.base.database.Database.saveTL(Database.java:434)
+	at com.metarnet.sfpw.base.database.Database.main(Database.java:105)
+2014-08-20 12:48:48 kyland_wx_eth:TopologicalLink [linkcode=4fc2a4eefad02b19f15c, linkid=0, aMeId=57, aSlotId=0, aPortId=null, zMeId=80, zSlotId=0, zPortId=2, label=userlabel, rate=1000, direction=CD_BI, nativeEmsName=topotest, type=null]
+
+
+
+2014-08-20 12:48:48 ORA-01006: 绑定变量不存在
+
+
+
+
+java.sql.SQLException: ORA-01006: 绑定变量不存在
+
+	at oracle.jdbc.dbaccess.DBError.throwSqlException(DBError.java:180)
+	at oracle.jdbc.ttc7.TTIoer.processError(TTIoer.java:208)
+	at oracle.jdbc.ttc7.Oall7.receive(Oall7.java:543)
+	at oracle.jdbc.ttc7.TTC7Protocol.doOall7(TTC7Protocol.java:1451)
+	at oracle.jdbc.ttc7.TTC7Protocol.parseExecuteFetch(TTC7Protocol.java:862)
+	at oracle.jdbc.driver.OracleStatement.executeNonQuery(OracleStatement.java:1846)
+	at oracle.jdbc.driver.OracleStatement.doExecuteOther(OracleStatement.java:1771)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:2361)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:422)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:487)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.logicalcobwebs.proxool.ProxyStatement.invoke(ProxyStatement.java:100)
+	at org.logicalcobwebs.proxool.ProxyStatement.intercept(ProxyStatement.java:57)
+	at oracle.jdbc.OracleStatement$$EnhancerByProxool$$acd6be42.execute(<generated>)
+	at com.metarnet.sfpw.base.database.Database.saveTL(Database.java:434)
+	at com.metarnet.sfpw.base.database.Database.main(Database.java:105)
+2014-08-20 12:49:29 kyland_wx_eth:TopologicalLink [linkcode=4fc2a4eefad02b19f15c, linkid=0, aMeId=57, aSlotId=0, aPortId=null, zMeId=80, zSlotId=0, zPortId=2, label=userlabel, rate=1000, direction=CD_BI, nativeEmsName=topotest, type=null]
+
+
+
+2014-08-20 12:49:29 ORA-01006: 绑定变量不存在
+
+
+
+
+java.sql.SQLException: ORA-01006: 绑定变量不存在
+
+	at oracle.jdbc.dbaccess.DBError.throwSqlException(DBError.java:180)
+	at oracle.jdbc.ttc7.TTIoer.processError(TTIoer.java:208)
+	at oracle.jdbc.ttc7.Oall7.receive(Oall7.java:543)
+	at oracle.jdbc.ttc7.TTC7Protocol.doOall7(TTC7Protocol.java:1451)
+	at oracle.jdbc.ttc7.TTC7Protocol.parseExecuteFetch(TTC7Protocol.java:862)
+	at oracle.jdbc.driver.OracleStatement.executeNonQuery(OracleStatement.java:1846)
+	at oracle.jdbc.driver.OracleStatement.doExecuteOther(OracleStatement.java:1771)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:2361)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:422)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:487)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.logicalcobwebs.proxool.ProxyStatement.invoke(ProxyStatement.java:100)
+	at org.logicalcobwebs.proxool.ProxyStatement.intercept(ProxyStatement.java:57)
+	at oracle.jdbc.internal.OraclePreparedStatement$$EnhancerByProxool$$da1a826.execute(<generated>)
+	at com.metarnet.sfpw.base.database.Database.saveTL(Database.java:434)
+	at com.metarnet.sfpw.base.database.Database.main(Database.java:105)

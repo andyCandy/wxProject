@@ -1,0 +1,13 @@
+2014-10-22 10:45:07 初始化开始...
+2014-10-22 10:45:07 创建服务代理对象：AlarmRetrieval,服务地址:http://192.168.189.46:9997/AlarmRetrieval
+2014-10-22 10:45:09 服务代理对象创建成功
+2014-10-22 10:45:09 创建服务代理对象：PerformanceManagementRetrieval,服务地址:http://192.168.189.46:9997/PerformanceManagementRetrieval
+2014-10-22 10:45:10 服务代理对象创建成功
+2014-10-22 10:45:10 创建服务代理对象：TopologicalLinkRetrievalRPC,服务地址:http://192.168.189.46:9997/TopologicalLinkRetrieval
+2014-10-22 10:45:10 服务代理对象创建成功
+2014-10-22 10:45:10 创建服务代理对象：ManagedElementRetrievalRPC,服务地址:http://192.168.189.46:9997/ManagedElementRetrieval
+2014-10-22 10:45:10 服务代理对象创建成功
+2014-10-22 10:45:10 创建服务代理对象：TerminationPointRetrievalRPC,服务地址:http://192.168.189.46:9997/TerminationPointRetrieval
+2014-10-22 10:45:11 服务代理对象创建成功
+2014-10-22 10:45:11 任务管理启动成功
+2014-10-22 10:45:11 DCPHandler初始化成功。。。
